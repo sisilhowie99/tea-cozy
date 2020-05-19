@@ -51,12 +51,21 @@ nav a {
 
 .teaOfTheMonth {
     position: relative;
+    width: 1000px;
+    height: 700px;
     top: 200px;
     font-weight: bold;
 }
 
-.image{
+.tea-types {
     display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image {
     width: 300px;
     height: 200px;
 }
@@ -67,19 +76,34 @@ nav a {
 
 .locations {
     background-image: url('../../images/locations.jpg');
-}
-
-.locations h3, .location-name {
-    font-weight: bold;
+    width: 1200px;
+    height: 500px;
+    display: inline-flex;
+    position: relative;
+    top: 300px;
 }
 
 .locations h3 {
+    display: inline-block;
 }
 
 .places {
+    /*display: inline-flex;*/
+    align-content: center;
+    width: 300px;
+    height: 300px;
+    margin: 15px 40px;
+    background-color: black;
+    opacity: 1;
+}
+
+.location-name {
+    font-weight: bold;
 }
 
 footer {
+    position: relative;
+    top: 300px;
     height: 200px;
     text-align: center;
 }
