@@ -4,60 +4,61 @@ body {
     color: seashell;
     background-color: black;
     opacity: 0.9;
+    text-align: center;
 }
 
 header {
-    position: fixed;
-    display: inline-flex;
+    background-color: black;
     border-bottom: 1px solid seashell;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 69px;
-    padding-left: 10px;
-    background-color: black;
-    align-items: center;
     z-index: 2;
 }
 
-#brand {
-    float: left;
+#brand img{
+    height: 50px;
 }
 
 nav a {
-    text-align: right;
-    justify-content: space-between;
+    color: seashell;
 }
 
 .mission {
     background-image: url('../../images/background.jpg');
-    background-repeat: no-repeat;
-    height: 700px;
     width: 1200px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     top: 69px;
 }
 
-#mission-text {
+#container {
     background-color: black;
-    text-align: center;
-    width: auto;
+    width: 100%;
+    height: 100px;
     align-items: center;
-    align-content: space-around;
 }
 
-div.teaOfTheMonth {
+#container h2, #container h4 {
+    margin: 0;
+}
+
+.teaOfTheMonth {
     position: relative;
-    display: inline-flex;
-    width: 1000px;
-    top: 100px;
-    text-align: center;
+    top: 200px;
     font-weight: bold;
 }
 
-.image {
-    justify-content: space-around;
-    height: 200px;
+.image{
+    display: inline-flex;
     width: 300px;
-    margin-bottom: 0;
+    height: 200px;
 }
 
 .caption {
@@ -66,27 +67,16 @@ div.teaOfTheMonth {
 
 .locations {
     background-image: url('../../images/locations.jpg');
-    width: 1200px;
-    height: 500px;
-    position: relative;
-    display: inline-flex;
+}
+
+.locations h3, .location-name {
+    font-weight: bold;
 }
 
 .locations h3 {
-    text-align: center;
-    margin-top: 50px;
 }
 
 .places {
-    width: 300px;
-    height: 300px;
-    margin-right: 40px;
-    margin-top: 15px;
-    position: relative;
-    top: 50px;
-    background-color: black;
-    opacity: 1;
-    text-align: center;
 }
 
 footer {
