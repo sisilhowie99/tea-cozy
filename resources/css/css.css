@@ -1,3 +1,9 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
 body {
     font-family: Helvetica;
     font-size: 22px;
@@ -21,103 +27,118 @@ header {
 
 #brand img{
     height: 50px;
+    padding: 10px;
 }
 
 nav {
-    display: inline-flex;
-    width: 500px;
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    align-content: center;
+    width: 50%;
 }
 
 nav a {
-    display: flex;
+    text-decoration: underline;
     color: seashell;
-    width: 80px;
+    width: 200px;
 }
 
 .mission {
     background-image: url('../../images/background.jpg');
     background-repeat: no-repeat;
-    width: 1200px;
+    background-size: cover;
     height: 700px;
     display: flex;
+    position: relative;
+    top: 70px;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 69px;
+    flex-direction: column;
 }
 
 #container {
     background-color: black;
-    width: 100%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
 }
 
-#titles {
-    position: relative;
-    top: 100px;
-    font-weight: bold;
-    align-content: space-around;
+h2, h4 {
+    margin: 1%;
 }
 
-.teaOfTheMonth {
+#main {
     display: flex;
     position: relative;
-    top: 100px;
+    top: 150px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.teas {
+    display: flex;
+    width: 1000px;
+    height: auto;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.image {
+figure {
+    margin: 30px 0 0 0;
+}
+
+.teas img {
     width: 300px;
     height: 200px;
 }
 
-.caption {
+figcaption {
     margin-top: 10px;
     font-weight: bold;
 }
 
-.locationTitle {
+#locations {
+    background-image: url('../../images/locations.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
     position: relative;
     top: 250px;
-    z-index: 2;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
-#locationSection {
-    background-image: url('../../images/locations.jpg');
-    width: 1200px;
-    height: 500px;
-    position: relative;
-    top: 150px;
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
 }
 
-.locations {
-    display: inline-flex;
-    position: relative;
-    top: 100px;
-    align-items: center;
-    align-content: space-around;
-    flex-wrap: wrap;
-}
-
-.places {
+.branch {
+    display: flex;
     width: 300px;
     height: 300px;
-    margin: 15px 40px 0 0;
     background-color: black;
     opacity: 1;
+    margin-top: 15px;
+    flex-direction: column;
 }
+
 
 footer {
     position: relative;
-    top: 150px;
+    top: 240px;
     height: 200px;
     text-align: center;
 }
 
 #copyright {
-    padding-left: 20px;
+    margin-left: 20px;
     text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
 }
